@@ -27,11 +27,11 @@ user_list_tels = []
 user_list_emails = []
 user_list_roles = []
 
-product_list_skus = []
-product_list_names = []
-product_list_categories = []
-product_list_prices = []
-product_list_stocks = []
+product_list_skus = ["BARCO1001", "CHAZI1200", "LINBI5000"]
+product_list_names = ["Barra de Cobre 12,7mm x 50cm", "Chapa de zinc 20x10cm 1mm", "Lingote de Bismuto 250grs"]
+product_list_categories = ["Barras de Cobre", "Chapas de Zinc", "Lingote de bisutmo"]
+product_list_prices = [25600.45, 10790.99, 15000]
+product_list_stocks = [25, 12, 13]
 
 sale_list_ids = []
 sale_list_user_sellers = []
@@ -55,5 +55,8 @@ while option != "5":
         selection_s = input("Ingrese la opción: ")
         print(" ")
     elif selection == "2":
-        fx.client_options(client_list_ids, client_list_names, client_list_dni_cuit,
-                          client_list_tels, client_list_emails)
+        fx.clients_options(client_list_ids, client_list_names, client_list_dni_cuit,
+                           client_list_tels, client_list_emails)
+    elif selection == "3":
+        fx.products_options(product_list_skus, product_list_names, product_list_categories,
+                            product_list_prices, product_list_stocks)
