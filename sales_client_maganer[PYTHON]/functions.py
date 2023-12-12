@@ -95,7 +95,7 @@ def validate_str_to_int(user_aswer):
         try:
             user_aswer_int = int(user_aswer)
             break
-        except: #acá hay una shit para resolver (entre otras)
+        except ValueError:
             print(f"¡El valor ingresado ({user_aswer}) no es valido!")
             print()
             user_aswer = input("Ingrese el cuit/dni del cliente: ")
@@ -297,6 +297,7 @@ def modify_client_option(id_client_list, name_client_list, cuitdni_client_list, 
         print("¡El cliente ingresado es incorrecto o inexistente!")
         print()
 
+
 # Function to delete client full data. Includes confirmation prompts and safety measures.
 def delete_client_option(id_client_list, name_client_list, cuitdni_client_list, tel_client_list, email_client_list):
     delete_loop = "si"
@@ -445,7 +446,7 @@ def modify_product_option(sku_product_list, name_product_list, categories_produc
                 print(sku_product_list[product_index])
                 print()
                 enter_new_sku = "no"
-                new_id = None
+                new_sku = None
                 while not enter_new_sku == "si":
                     new_sku = input("Ingrese Nuevo SKU: ")
                     enter_new_sku = input(
@@ -490,7 +491,7 @@ def modify_product_option(sku_product_list, name_product_list, categories_produc
                 new_category = None
                 while not enter_new_category == "si":
                     new_category = input("Ingrese Nuevo Categoría: ")
-                    enter_new_cuit_ = input(
+                    enter_new_category = input(
                         f"¿Desea reemplazar (Categoría:{categories_product_list[product_index]}) "
                         f"por (Categoría:{new_category})? (SI/NO): ").lower()
                 if enter_new_category == "si":
@@ -519,7 +520,7 @@ def modify_product_option(sku_product_list, name_product_list, categories_produc
                     print()
                     print("¡Modificación realizada con éxito!")
                     print()
-                    stay_modify_client = input(
+                    stay_modify_product = input(
                         f"¿Desea continuar modificando datos del producto: {name_product_list[product_index]}? "
                         f"(SI/NO): ").lower()
                     print()
@@ -619,6 +620,10 @@ def products_options(sku_product_list, name_product_list, categories_product_lis
             print(f"¡La opción ingresada [{selection_p}] es incorrecta!")
             print(f"Por Favor ingrese una opción válida")
             print()
+
+
+def validation_user(user_email_list, user_password_list, user, password):
+    return search_data(user_email_list, user) and search_data(user_password_list, password)
 
 
 """
