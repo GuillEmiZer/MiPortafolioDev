@@ -1,7 +1,7 @@
 # BASE DE DATOS DE ZETATEC MATERIALES
 
 ## ESTADO ACTUAL DEL PROYECTO
-En la actualidad, el proyecto se encuentra en la fase de planificación y diseño. Durante esta etapa, me enfrento a varios desafíos técnicos que requieren una cuidadosa consideración para evitar futuras refactorizaciones de la base de datos. Algunos de estos desafíos incluyen:
+En la actualidad, el proyecto se encuentra en la fase de diseño. Durante esta etapa, me enfrento a varios desafíos técnicos que requieren una cuidadosa consideración para evitar futuras refactorizaciones de la base de datos. Algunos de estos desafíos incluyen:
 - **Cálculo de precios a nivel de base de datos:** Implementación de un sistema que permita ajustes en los precios de los productos según la inflación en pesos y dólares.
 - **Gestión de inventario:** Desarrollo de mecanismos eficaces para el seguimiento y control del stock de productos.
 - **Gestión financiera y cadena de suministros:** Diseño de procesos que abarquen desde la facturación hasta la gestión de proveedores, garantizando una cadena de suministro eficiente.
@@ -11,10 +11,11 @@ En la actualidad, el proyecto se encuentra en la fase de planificación y diseñ
 
 ## MODELADO LÓGICO - DOCUMENTACIÓN EN PROCESO: 
 - Diccionario de Datos [Especificaciones de Campos]
-- Nomenclatura
 - Descripción general de tablas
 - Reglas de Negocio
-- Especificaciones de Vistas
+- Diagramas y Especificaciones de Vistas
+- Lista de Campos Calculados
+- Especificación de Excepciones de Diseño 
 
 ## DIAGRAMA ENTIDAD-RELACIÓN
 El diagrama se encuentra en proceso de desarrollo. Todavía faltan sumar las Reglas de Elminación y el Grado de Participación de las Relaciones. 
