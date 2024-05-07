@@ -11,7 +11,6 @@ En la actualidad, el proyecto se encuentra en la fase de diseño. Durante esta e
 
 ## MODELADO LÓGICO - DOCUMENTACIÓN EN PROCESO: 
 - Diccionario de Datos [Especificaciones de Campos]
-- Descripción general de tablas
 - Reglas de Negocio
 - Diagramas y Especificaciones de Vistas
 - Lista de Campos Calculados
@@ -19,3 +18,6 @@ En la actualidad, el proyecto se encuentra en la fase de diseño. Durante esta e
 
 ## DIAGRAMA ENTIDAD-RELACIÓN
 El diagrama se encuentra en proceso de desarrollo. Todavía faltan sumar las Reglas de Elminación y el Grado de Participación de las Relaciones. 
+
+## DESCRIPCIÓN GENERAL DE TABLAS
+Este documento se encuentra en proceso de desarrollo. Todavía faltan agregar algunas descripciones y continuar puliendo las descripciones ya presentadas. 
