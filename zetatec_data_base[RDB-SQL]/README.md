@@ -17,7 +17,8 @@ En la actualidad, el proyecto se encuentra en la fase de diseño. Durante esta e
 - Especificación de Excepciones de Diseño 
 
 ## DIAGRAMA ENTIDAD-RELACIÓN
-El diagrama se encuentra en proceso de desarrollo. Todavía faltan sumar las Reglas de Elminación y el Grado de Participación de las Relaciones. 
+- Se agregó el grado de participación de las relaciones. 
+- Se agregaron Reglas de eliminación por defecto (R-restrict) para previsualizar la versión final del diagrama, pero deben revisarse todas. 
 
 ## DESCRIPCIÓN GENERAL DE TABLAS
 Este documento se encuentra en proceso de desarrollo. Todavía faltan agregar algunas descripciones y continuar puliendo las descripciones ya presentadas. 
