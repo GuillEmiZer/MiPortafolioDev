@@ -10,7 +10,7 @@ Nota 3: Al final del documento se encuentra el metadiccionario.
 
 ### **[ ID_CLI ]**
 
-**General elements**
+- **GENERAL ELEMENTS**
 - **Field Name:** id_cli
 - **Parent Table:** CLIENTES
 - **Specification Type:** Unique
@@ -19,16 +19,14 @@ Nota 3: Al final del documento se encuentra el metadiccionario.
 - **Shared By:** DIR_CLI, USUARIOS_CLI, PEDIDOS, DATOS_FAC_CLI
 - **Alias(es):** -
 - **Description:** -
-
-**Phisical Elements**
+- **PHISICAL ELEMENTS**
 - **Data Type:** int
 - **Length:** -
 - **Decimal Places:** -
 - **Input Mask:** -
 - **Display Format:** -
 - **Character Support:** Numbers
-
-**Logical Elements**
+- **LOGICAL ELEMENTS**
 - **Key Type:** Primary
 - **Key Structure:** Simple
 - **Uniqueness:** Unique
@@ -47,7 +45,7 @@ Nota 3: Al final del documento se encuentra el metadiccionario.
 
 ### **[ NOMBRE_CLI ]**
 
-**General elements**
+- **GENERAL ELEMENTS**
 - **Field Name:** nombre_cli
 - **Parent Table:** CLIENTES
 - **Specification Type:** Unique
@@ -56,16 +54,14 @@ Nota 3: Al final del documento se encuentra el metadiccionario.
 - **Shared By:** -
 - **Alias(es):** -
 - **Description:** -
-
-**Phisical Elements**
+- **PHISICAL ELEMENTS**
 - **Data Type:** str
 - **Length:** 50
 - **Decimal Places:** -
 - **Input Mask:** -
 - **Display Format:** -
 - **Character Support:** Letters
-
-**Logical Elements**
+- **LOGICAL ELEMENTS**
 - **Key Type:** No
 - **Key Structure:** -
 - **Uniqueness:** Non-unique
