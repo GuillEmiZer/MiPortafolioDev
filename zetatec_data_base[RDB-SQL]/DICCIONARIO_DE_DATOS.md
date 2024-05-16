@@ -1,7 +1,10 @@
 # DICCIONARIO DE DATOS - ESPECIFICACIONES DE CAMPO
 
-Nota 1: Al final del documento se encuentra el metadiccionario. 
-Nota 2: Los campos fueron agrupados en orden alfabético de Tablas. 
+Nota 1: Los campos se han agrupado en función de las tablas a las cuales pertenecen. 
+
+Nota 2: Las Tablas que agrupan los campos fueron ordenadas alfabéticamente. 
+
+Nota 3: Al final del documento se encuentra el metadiccionario. 
 
 ## C - CLIENTES
 
