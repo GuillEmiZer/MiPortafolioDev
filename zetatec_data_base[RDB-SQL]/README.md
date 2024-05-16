@@ -10,7 +10,6 @@ En la actualidad, el proyecto se encuentra en la fase de diseño. Durante esta e
 - **Automatización de operaciones de inserción, actualización y eliminación:** Programación de la base de datos para automatizar tareas y asegurirar integridad de datos en inserciones, actualizaciones y eliminación de registros.
 
 ## MODELADO LÓGICO - DOCUMENTACIÓN EN PROCESO: 
-- Diccionario de Datos [Especificaciones de Campos]
 - Reglas de Negocio
 - Diagramas y Especificaciones de Vistas
 - Lista de Campos Calculados
@@ -21,4 +20,8 @@ En la actualidad, el proyecto se encuentra en la fase de diseño. Durante esta e
 - Se agregaron Reglas de eliminación por defecto (R-restrict) para previsualizar la versión final del diagrama, pero deben revisarse todas. 
 
 ## DESCRIPCIÓN GENERAL DE TABLAS
-Este documento se encuentra en proceso de desarrollo. Todavía faltan agregar algunas descripciones y continuar puliendo las descripciones ya presentadas. 
+- Si bien se agregaron la mayoría de las descripciones todavía tenemos algunas pendientes. 
+- Algunas descripciones deben ser pulidas para dar cuenta con mayor precisión los requisitos de información de la organización.    
+
+## DICCIONARIO DE DATOS - ESPECIFICACIONES DE CAMPO
+- Presentación incial del documento, todavía en desarrollo.  
