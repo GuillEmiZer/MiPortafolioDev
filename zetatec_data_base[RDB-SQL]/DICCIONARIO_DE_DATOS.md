@@ -8,7 +8,7 @@ Nota 3: Al final del documento se encuentra el metadiccionario.
 
 ## C - CLIENTES
 
-### **#1 ID_CLI**
+### **# ID_CLI**
 
 **GENERAL ELEMENTS**
 - **Field Name:** id_cli
@@ -45,7 +45,7 @@ Nota 3: Al final del documento se encuentra el metadiccionario.
 - **Operations allowed on other fields:** -
 - **Operations allowed on value expressions:** -
 
-### **#2 NOMBRE_CLI**
+### **# NOMBRE_CLI**
 
 **GENERAL ELEMENTS**
 - **Field Name:** nombre_cli
