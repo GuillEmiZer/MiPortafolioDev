@@ -19,6 +19,7 @@ Nota 3: Al final del documento se encuentra el metadiccionario.
 - **Shared By:** DIR_CLI, USUARIOS_CLI, PEDIDOS, DATOS_FAC_CLI
 - **Alias(es):** -
 - **Description:** 
+
 **PHISICAL ELEMENTS**
 - **Data Type:** int
 - **Length:** -
@@ -26,6 +27,7 @@ Nota 3: Al final del documento se encuentra el metadiccionario.
 - **Input Mask:** -
 - **Display Format:** -
 - **Character Support:** Numbers
+
 **LOGICAL ELEMENTS**
 - **Key Type:** Primary
 - **Key Structure:** Simple
@@ -54,6 +56,7 @@ Nota 3: Al final del documento se encuentra el metadiccionario.
 - **Shared By:** -
 - **Alias(es):** -
 - **Description:** -
+
 **PHISICAL ELEMENTS**
 - **Data Type:** str
 - **Length:** 50
@@ -61,6 +64,7 @@ Nota 3: Al final del documento se encuentra el metadiccionario.
 - **Input Mask:** -
 - **Display Format:** -
 - **Character Support:** Letters
+
 **LOGICAL ELEMENTS**
 - **Key Type:** No
 - **Key Structure:** -
