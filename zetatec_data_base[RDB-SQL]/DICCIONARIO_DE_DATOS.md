@@ -8,7 +8,7 @@ Nota 3: Al final del documento se encuentra el metadiccionario.
 
 ## C - CLIENTES
 
-### ID_CLI [CAMPO\] 
+### # ID_CLI 
 
 **General elements**
 - **Field Name:** id_cli
@@ -45,7 +45,7 @@ Nota 3: Al final del documento se encuentra el metadiccionario.
 - **Operations allowed on other fields:** -
 - **Operations allowed on value expressions:** -
 
-### NOMBRE_CLI [CAMPO\] 
+### # NOMBRE_CLI 
 
 **General elements**
 - **Field Name:** nombre_cli
