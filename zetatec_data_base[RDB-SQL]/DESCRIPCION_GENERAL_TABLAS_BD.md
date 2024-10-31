@@ -16,35 +16,15 @@ A continuación se detallan las descripciones generales de las tablas disponible
 - **Tipo:** Datos
 - **Descripción:** Registros de los comprobantes fiscales emitidos por el negocio. Se utilizan para validar las ventas, cancelaciones y devoluciones realizadas, asegurando su adecuada declaración ante la AFIP y el cumplimiento de las obligaciones fiscales correspondientes.
 
-### 4. Conjuntos de Sobrecargos
-- **Tipo:** -
-- **Descripción:** Descripción pendiente.
-
-### 5. Cotización de Monedas
-- **Tipo:** Datos
-- **Descripción:** Registro de la cotización actual de monedas extranjeras respecto al peso argentino. Esta información es crucial para nosotros, ya que las cotizaciones de los materiales que adquirimos a proveedores se expresan en monedas extranjeras. Asimismo, utilizamos estos datos para calcular una parte de los precios de venta de los productos disponibles en nuestro catálogo.
-
 ## D
 
-### 6. Datos Bancarios
-- **Tipo:** Datos
-- **Descripción:** Registra los datos generales de las cuentas bancarias de empleados, clientes y proveedores. Estos datos se almacenan para facilitar las transacciones financieras.
-
 ### 7. Datos Bancarios de Proveedores
-- **Tipo:** -
-- **Descripción:** Descripción pendiente
-
-### 8. Datos Bancarios de Empleados
 - **Tipo:** -
 - **Descripción:** Descripción pendiente
 
 ### 9. Datos de Facturación de Clientes
 - **Tipo:** Datos
 - **Descripción:** Datos de facturación suministrados por nuestros clientes para la emisión de los comprobantes fiscales asociados a las compras que nos realizan. La precisión y organización de esta información son fundamentales, ya que cada cliente puede tener uno o varios conjuntos de datos de facturación.
-
-### 10. Descripciones Informativas
-- **Tipo:** Datos
-- **Descripción:** Mensajes prediseñados estratégicamente para garantizar coherencia, claridad y precisión en la comunicación efectiva con clientes e interesados, como así también en la descripción eficiente de los productos y servicios ofrecidos en las diferentes plataformas. Minimizan el riesgo de errores en la comunicación, agilizan los tiempos de trabajo y facilitan las tareas de revisión para la mejora constante de los mismos.
 
 ### 11. Detalle de Compras
 - **Tipo:** -
@@ -57,22 +37,6 @@ A continuación se detallan las descripciones generales de las tablas disponible
 ### 13. Detalle de Presupuestos
 - **Tipo:** -
 - **Descripción:** Descripción pendiente
-
-### 14. Detalle de Sobrecargos
-- **Tipo:** -
-- **Descripción:** Descripción pendiente
-
-### 15. Direcciones de Clientes
-- **Tipo:** -
-- **Descripción:** Descripción pendiente
-
-### 16. Direcciones
-- **Tipo:** -
-- **Descripción:** Descripción pendiente
-
-### 17. Documentos del Negocio
-- **Tipo:** Datos
-- **Descripción:** Documentación que el negocio utiliza para cumplir con requisitos legales, regulatorios y operativos. El propósito principal de esta tabla es almacenar los metadatos de dichos documentos para facilitar su organización, búsqueda, seguimiento, modificación y actualización correspondiente.
 
 ## E
 
@@ -92,10 +56,6 @@ A continuación se detallan las descripciones generales de las tablas disponible
 
 ## I
 
-### 21. Imágenes
-- **Tipo:** Datos
-- **Descripción:** Recopilación de imágenes empleadas por el negocio para promocionar productos, servicios, presentaciones de marca personal y campañas publicitarias. Esta tabla se destina a organizar las imágenes según su propósito dentro de la organización, facilitando el seguimiento y los ajustes necesarios conforme a los objetivos establecidos.
-
 ### 22. Inventario
 - **Tipo:** -
 - **Descripción:** Descripción pendiente
@@ -112,10 +72,6 @@ A continuación se detallan las descripciones generales de las tablas disponible
 
 ## O
 
-### 25. Ofertas
-- **Tipo:** -
-- **Descripción:** Descripción pendiente
-
 ## P
 
 ### 26. Pagos del Clientes
@@ -126,37 +82,13 @@ A continuación se detallan las descripciones generales de las tablas disponible
 - **Tipo:** Datos
 - **Descripción:** Evento en el que los vendedores registran el conjunto de productos y servicios solicitados por nuestros clientes para su posterior venta. Almacenamos esta información para facilitar el seguimiento detallado de los pedidos por parte de los vendedores y para vincularlos con otras actividades, como el control de inventario, las reservas, la preparación de órdenes, la facturación y el seguimiento de envíos.
 
-### 28. Plataformas
-- **Tipo:** Datos
-- **Descripción:** Plataformas de venta online donde comercializamos productos. Almacenamos esta información para asociarla a descripciones de publicaciones, precios, sobrecargos y mensajes de atención al cliente que varían según la plataforma de venta.
-
 ### 29. Presupuestos de Proveedores
 - **Tipo:** Datos
 - **Descripción:** Presupuestos realizados por nuestros proveedores y potenciales proveedores sobre las materias primas que consideramos adquirir. Utilizamos esta información para comparar precios entre diferentes ofertas y para rastrear posibles aumentos en los costos de las materias primas.
 
-### 30. Productos no pertenecientes al inventario
-- **Tipo:** -
-- **Descripción:** Descripción pendiente
-
-### 31. Productos
-- **Tipo:** Datos
-- **Descripción:** Detalles de los productos disponibles para la venta. Almacenamos esta información para definir su disponibilidad, calcular sus precios, asignarles descripciones según la plataforma de venta y categorizarlos según sus propiedades, que utilizamos para analizar las tendencias de compra y optimizar la oferta.
-
 ### 32. Proveedores
 - **Tipo:** Datos
 - **Descripción:** Empresas proveedoras de las materias primas que adquirimos. Almacenamos información relevante para el contacto, ubicación de sucursales, coordinación de entregas y propósitos fiscales.
-
-### 33. Publicaciones descripciones
-- **Tipo:** -
-- **Descripción:** Descripción pendiente
-
-### 34. Publicaciones imágenes
-- **Tipo:** -
-- **Descripción:** Descripción pendiente
-
-### 35. Publicaciones
-- **Tipo:** Datos
-- **Descripción:** Detalles de las publicaciones de nuestros productos en diversas plataformas de venta online. Almacenamos esta información para realizar seguimientos sobre los productos ofrecidos y cómo se presentan en las plataformas de venta, lo que nos permite ajustar estrategias de marketing y optimizar la presentación de nuestros productos.
 
 ## S
 
@@ -164,27 +96,11 @@ A continuación se detallan las descripciones generales de las tablas disponible
 - **Tipo:** -
 - **Descripción:** Descripción pendiente
 
-### 37. Servicios
-- **Tipo:** Datos
-- **Descripción:** Servicios adicionales ofrecidos a nuestros clientes. Almacenamos esta información para identificar proveedores de los servicios, calcular precios finales de los mismos, asociar servicios con descripciones específicas de otras tablas y distinguirlos de los productos, ya que requieren otro tipo de tareas de mantenimiento y revisión.
-
-### 38. Sobrecargos
-- **Tipo:** Datos
-- **Descripción:** Cargos adicionales agregados al precio bruto de productos y servicios ofrecidos por el negocio. Esta información es crucial para calcular el precio final, ya que dependiendo de la plataforma de venta tenemos diferentes cargos, impuestos, comisiones y ganancias que considerar.
-
 ## U
-
-### 39. Unidades de Referencia
-- **Tipo:** -
-- **Descripción:** Descripción pendiente
 
 ### 40. Usuarios de los Clientes
 - **Tipo:** Datos
 - **Descripción:** Nombres de usuarios que los clientes registraron en cada una de las plataformas online desde la que nos compran productos. Es importante almacenar este dato para evitar duplicar clientes en nuestra base de datos dado que un mismo cliente puede tener múltiples usuarios.
-
-### 41. Usuarios web
-- **Tipo:** -
-- **Descripción:** Descripción pendiente
 
 ## V
 
