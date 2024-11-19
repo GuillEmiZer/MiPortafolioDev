@@ -15,18 +15,16 @@
 ## MODELADO LÓGICO - DOCUMENTACIÓN EN PROCESO: 
 - Reglas de Negocio
 - Diagramas y Especificaciones de Vistas
+- Lista de Valores Enumerados
 - Lista de Campos Calculados
-- Especificación de Excepciones de Diseño 
-
-
-## DIAGRAMA ENTIDAD-RELACIÓN
-- El diagrama se encuentra en etapa de rediseño por lo planteado en el cambio de objetivos. 
-
+- metadiccionario
 
 ## DESCRIPCIÓN GENERAL DE TABLAS
 - Si bien se agregaron la mayoría de las descripciones todavía tenemos algunas pendientes. 
 - Algunas descripciones deben ser pulidas para dar cuenta con mayor precisión los requisitos de información de la organización.    
 
-
 ## DICCIONARIO DE DATOS - ESPECIFICACIONES DE CAMPO
-- El presente documento será reemplazado por otro que aporta mayor claridad.  
+- El presente documento se encuentra en desarrollo. Actualmente es la presentación del formato que será utilizado. 
+
+## SENTENCIAS DDL
+- Se agregó carpeta con archivos SQL. Documento en desarrollo. 
