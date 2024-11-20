@@ -42,29 +42,6 @@ CREATE TABLE IF NOT EXISTS produccion."SERV_ENV"
     FOREIGN KEY (id_item) REFERENCES produccion."INVENTARIO" (id_item) ON DELETE RESTRICT
 );
 
--- Crear tabla "DETALLE_PRESUPUESTOS" (ver posible error de coma luego de primer fk)
-CREATE TABLE IF NOT EXISTS produccion."DETALLE_PRESUPUESTOS"
-(
-    id_detalle_pre serial PRIMARY KEY,
-    unid_venta_prov_detalle_pre unidad_venta_prov,
-    precio_unid_venta_detalle_pre numeric(10, 2),
-    id_item integer NOT NULL,
-    id_presupuesto_prov integer NOT NULL,
-    FOREIGN KEY (id_item) REFERENCES produccion."INVENTARIO" (id_item) ON DELETE RESTRICT,
-    FOREIGN KEY (id_presupuesto_prov) REFERENCES produccion."PRESUPUESTOS_PROV" (id_presupuesto_prov) ON DELETE RESTRICT
-);
-
--- Crear tabla "PRESUPUESTOS_PROV"
-CREATE TABLE IF NOT EXISTS produccion."PRESUPUESTOS_PROV"
-(
-    id_presupuesto_prov serial PRIMARY KEY,
-    fec_presupuesto_prov date NOT NULL,
-    cambio_oficial_presupuesto_prov NUMERIC(10,2) NOT NULL,
-    cambio_paralelo_presupuesto_prov NUMERIC(10,2) NOT NULL,
-    id_prov integer NOT NULL,
-    FOREIGN KEY (id_prov) REFERENCES produccion."PROVEEDORES" (id_prov) ON DELETE RESTRICT
-);
-
 -- Crear tabla "PROVEEDORES"
 CREATE TABLE IF NOT EXISTS produccion."PROVEEDORES"
 (
@@ -82,17 +59,38 @@ CREATE TABLE IF NOT EXISTS produccion."PROVEEDORES"
     cp_prov CHARACTER VARYING(10)
 );
 
--- Crear tabla "DETALLE_COMPRAS"
-CREATE TABLE IF NOT EXISTS produccion."DETALLE_COMPRAS"
+-- Crear tabla "COMPROBANTES_FISCALES"
+CREATE TABLE IF NOT EXISTS produccion."COMPROBANTES_FISCALES"
 (
-    id_detalle_compra serial PRIMARY KEY,
-    unid_venta_prov_detalle_compra unidad_venta_prov NOT NULL,
-    precio_venta_prov_detalle_compra NUMERIC(10,2) NOT NULL,
-    cant_detalle_compra INTEGER NOT NULL,  
-    id_item INTEGER NOT NULL, 
-    id_compra INTEGER NOT NULL,
+    id_comprobante_fiscal serial PRIMARY KEY,
+    tipo_comprobante_fiscal tipos_comprobantes_fiscales NOT NULL,  
+    ref_interna_comprobante_fiscal CHARACTER VARYING(30),
+    num_comprobante_fiscal CHARACTER VARYING(30) NOT NULL,
+    fec_comprobante_fiscal date NOT NULL,
+    url_comprobante_fiscal CHARACTER VARYING(50)
+);
+
+-- Crear tabla "PRESUPUESTOS_PROV"
+CREATE TABLE IF NOT EXISTS produccion."PRESUPUESTOS_PROV"
+(
+    id_presupuesto_prov serial PRIMARY KEY,
+    fec_presupuesto_prov date NOT NULL,
+    cambio_oficial_presupuesto_prov NUMERIC(10,2) NOT NULL,
+    cambio_paralelo_presupuesto_prov NUMERIC(10,2) NOT NULL,
+    id_prov integer NOT NULL,
+    FOREIGN KEY (id_prov) REFERENCES produccion."PROVEEDORES" (id_prov) ON DELETE RESTRICT
+);
+
+-- Crear tabla "DETALLE_PRESUPUESTOS" (ver posible error de coma luego de primer fk)
+CREATE TABLE IF NOT EXISTS produccion."DETALLE_PRESUPUESTOS"
+(
+    id_detalle_pre serial PRIMARY KEY,
+    unid_venta_prov_detalle_pre unidad_venta_prov,
+    precio_unid_venta_detalle_pre numeric(10, 2),
+    id_item integer NOT NULL,
+    id_presupuesto_prov integer NOT NULL,
     FOREIGN KEY (id_item) REFERENCES produccion."INVENTARIO" (id_item) ON DELETE RESTRICT,
-    FOREIGN KEY (id_compra) REFERENCES produccion."COMPRAS_PROV" (id_compra_prov) ON DELETE RESTRICT
+    FOREIGN KEY (id_presupuesto_prov) REFERENCES produccion."PRESUPUESTOS_PROV" (id_presupuesto_prov) ON DELETE RESTRICT
 );
 
 -- Crear tabla "COMPRAS_PROV"
@@ -108,6 +106,19 @@ CREATE TABLE IF NOT EXISTS produccion."COMPRAS_PROV"
     id_prov INTEGER NOT NULL,
     FOREIGN KEY (id_comprobante_fiscal) REFERENCES produccion."COMPROBANTES_FISCALES" (id_comprobante_fiscal) ON DELETE RESTRICT,
     FOREIGN KEY (id_prov) REFERENCES produccion."PROVEEDORES" (id_prov) ON DELETE RESTRICT
+);
+
+-- Crear tabla "DETALLE_COMPRAS"
+CREATE TABLE IF NOT EXISTS produccion."DETALLE_COMPRAS"
+(
+    id_detalle_compra serial PRIMARY KEY,
+    unid_venta_prov_detalle_compra unidad_venta_prov NOT NULL,
+    precio_venta_prov_detalle_compra NUMERIC(10,2) NOT NULL,
+    cant_detalle_compra INTEGER NOT NULL,  
+    id_item INTEGER NOT NULL, 
+    id_compra INTEGER NOT NULL,
+    FOREIGN KEY (id_item) REFERENCES produccion."INVENTARIO" (id_item) ON DELETE RESTRICT,
+    FOREIGN KEY (id_compra) REFERENCES produccion."COMPRAS_PROV" (id_compra_prov) ON DELETE RESTRICT
 );
 
 -- Crear tabla "DATOS_BANCARIOS_PROV"
@@ -127,11 +138,8 @@ CREATE TABLE IF NOT EXISTS produccion."DATOS_BANCARIOS_PROV"
 CREATE TABLE IF NOT EXISTS produccion."PRECIOS_PRODUCTOS"
 (
     id_precio_prod serial PRIMARY KEY,
-    lista_de_precios lista_de_precios NOT NULL,
+    lista_de_precios listas_de_precios NOT NULL,
     precio NUMERIC(10,2) NOT NULL,
     id_item INTEGER NOT NULL, 
     FOREIGN KEY (id_item) REFERENCES produccion."INVENTARIO" (id_item) ON DELETE RESTRICT
-    CONSTRAINT precio_unico_lista UNIQUE (lista_de_precios, id_item) 
 );
-
-

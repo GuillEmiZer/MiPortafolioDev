@@ -12,10 +12,13 @@ CREATE TYPE motivo_consulta AS ENUM ('por stock', 'si es producto oficial');
 
 -- TABLA SERV_ENV
 CREATE TYPE tipo_serv_env AS ENUM ('domicilio', 'sucursal');
-CREATE TYPE empresa_encomienda AS ENUM ('correo argentino', 'andreani', 'oca')
+CREATE TYPE empresa_encomienda AS ENUM ('correo argentino', 'andreani', 'oca');
 
 -- TABLAS DETALLE_PRESUPUESTOS / DETALLE_COMPRAS
 CREATE TYPE unidad_venta_prov AS ENUM ('kg', 'unidad');
 
 -- TABLAS PRECIOS_PRODUCTOS
 CREATE TYPE listas_de_precios AS ENUM ('catalogo', 'mercado libre');
+
+-- TABLAS COMPROBANTES_FISCALES
+CREATE TYPE tipos_comprobantes_fiscales AS ENUM ('factura b', 'nota de credito c', 'factura c',);
