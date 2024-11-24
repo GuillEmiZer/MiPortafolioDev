@@ -17,8 +17,39 @@ CREATE TYPE empresa_encomienda AS ENUM ('correo argentino', 'andreani', 'oca');
 -- TABLAS DETALLE_PRESUPUESTOS / DETALLE_COMPRAS
 CREATE TYPE unidad_venta_prov AS ENUM ('kg', 'unidad');
 
--- TABLAS PRECIOS_PRODUCTOS
+-- TABLA PRECIOS_PRODUCTOS
 CREATE TYPE listas_de_precios AS ENUM ('catalogo', 'mercado libre');
 
--- TABLAS COMPROBANTES_FISCALES
+-- TABLA COMPROBANTES_FISCALES
 CREATE TYPE tipos_comprobantes_fiscales AS ENUM ('factura b', 'nota de credito c', 'factura c',);
+
+-- TABLA EMPRESAS_ENCOMIENDAS
+CREATE TYPE tipos_empresas_encomiendas AS ENUM ('correo', 'mensajería moto', 'encomienda micro',);
+
+-- TABLA CLIENTES
+CREATE TYPE tipos_documentos_identidad AS ENUM ('dni', 'cuit');
+
+-- TABLA DATOS_FAC_CLI
+CREATE TYPE condicion_frente_iva AS ENUM ('consumidor final', 'responsable inscripto','responsable monotributo', 'iva excepto');
+
+-- TABLA DATOS_ENV_CLI
+CREATE TYPE tipo_dato_envio AS ENUM ('Principal', 'secundario');
+
+-- ENUM DE PLATAFORMAS DE VENTA Y ATENCIÓN
+CREATE TYPE plataformas_venta_atencion AS ENUM ('whatsapp', 'mercado libre', 'facebook');
+
+-- TABLA PEDIDOS
+CREATE TYPE estado_pedido AS ENUM ('abierto', 'cerrado', 'cancelado');
+CREATE TYPE tipo_descuento AS ENUM ('porcentual', 'fijo');
+
+-- ENUM DE JURISDICCIONES IMPOSITIVAS
+CREATE TYPE jurisdicciones_impositivas AS ENUM ('caba', 'buenos aires', 'catamarca', 'chaco', 'chubut', 'cordoba', 'corrientes', 'entre rios', 'formosa', 'jujuy', 'la pampa', 'la rioja', 'mendoza', 'misiones', 'neuquen', 'rio negro', 'salta', 'san juan', 'san luis', 'santa cruz', 'santa fe', 'santiago del estero', 'tierra del fuego', 'tucuman');
+
+-- TABLA ENVIOS
+CREATE TYPE estado_envio AS ENUM ('despachado', 'entregado', 'cancelado', 'perdido', 'retornando', 'en sucursal destino', 'en sucursal remitente');
+
+-- TABLA VENTAS
+CREATE TYPE estado_venta AS ENUM ('cerrada', 'cancelada'); 
+
+-- TABLA COMPROBANTES FISCALES
+CREATE TYPE ref_internas_comprobantes_fiscales AS ENUM ('compra materias primas', 'ventas'); 
